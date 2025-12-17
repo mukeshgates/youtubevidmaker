@@ -1,0 +1,20 @@
+
+:root { --bg:#0b0c0f; --card:#151822; --text:#e7e9ee; --muted:#9aa1ad; --accent:#58a6ff; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+       background: var(--bg); color: var(--text); }
+.container { max-width: 960px; margin: 32px auto; padding: 0 16px; }
+h1 { margin-bottom: 16px; }
+form { display:grid; grid-template-columns: 1fr; gap: 10px; margin-bottom: 12px; }
+input, select, textarea {
+  padding: 10px; border-radius: 8px; border: 1px solid #2a2f3a; background: var(--card); color: var(--text);
+}
+button { padding: 10px 16px; border:none; border-radius: 8px; background: var(--accent); color:#081726; cursor:pointer; }
+.status { min-height: 20px; color: var(--muted); margin: 8px 0; }
+.hidden { display:none; }
+.cards { display:grid; grid-template-columns: repeat(auto-fill,minmax(220px,1fr)); gap:12px; }
+.card { background: var(--card); border:1px solid #2a2f3a; border-radius: 10px; padding: 10px; }
+.card img { width:100%; border-radius:8px; background:white; }
+.card p { font-size:0.9rem; color:var(--muted); margin-top:8px; }
+.actions
+
