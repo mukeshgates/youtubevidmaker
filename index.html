@@ -12,12 +12,11 @@
     <h1>Video Script & Storyboard Automator</h1>
 
     <form id="form">
-      <label>Target duration</label>
-      <select id="duration">
-        <option value="2">2 minutes</option>
-        <option value="3">3 minutes</option>
-        <option value="5">5 minutes</option>
-      </select>
+     
+    <label for="duration">Target duration (minutes)</label>
+    <input id="duration" type="number" min="0.1" step="0.1" value="2.0" placeholder="e.g., 3.5"/>
+    <small style="color:#9aa1ad">Tip: You can enter decimals (e.g., 2.5 = 2 minutes 30 seconds).</small>
+
 
       <label>Words per minute (voiceover)</label>
       <input id="wpm" type="number" value="140" min="90" max="220"/>
