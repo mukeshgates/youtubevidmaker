@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Video Script & Storyboard Automator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <links.css
+</head>
+<body>
+  <main class="container">
+    <h1>Video Script & Storyboard Automator</h1>
+
+    <form id="form">
+      <label>Target duration</label>
+      <select id="duration">
+        <option value="2">2 minutes</option>
+        <option value="3">3 minutes</option>
+        <option value="5">5 minutes</option>
+      </select>
+
+      <label>Words per minute (voiceover)</label>
+      <input id="wpm" type="number" value="140" min="90" max="220"/>
+
+      <label>Image style</label>
+      <input id="style" type="text"
+        value="hand-drawn black line sketch, monochrome on white, minimal shading"/>
+
+      <label>Paste your idea (few lines)</label>
+      <textarea id="draft" rows="8" placeholder="Type your rough idea..."></textarea>
+
+      <button type="submit">Generate</button>
+    </form>
+
+    <section id="status" class="status"></section>
+
+    <section id="preview" class="hidden">
+      <h2>Storyboard preview</h2>
+      <div id="cards" class="cards"></div>
+    </section>
+
+    <div class="actions">
+      <button id="download" class="hidden">Download ZIP</button>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1in.js</script>
+  https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js</script>
+  app.js</script>
+</body>
